@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyLayout</title>
+    @RenderSection("scripts", required:false)
+</head>
+<body>
+    <h1>Este es un nuevo layout</h1>
+    <div> 
+        @RenderBody() <!--Donde se van a renderizar los datos que envían las vistas-->
+    </div>
+</body>
+</html>
